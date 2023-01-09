@@ -1,11 +1,11 @@
 import SvgImage from "../svg";
 
-const Header = () => (
+const Banner = () => (
   <div
     className={`w-full flex items-center px-5 border-b mt-20 md:mt-0`}
     style={{ height: "60vh" }}
   >
-    <div className={`grid grid-cols-1 md:grid-cols-2 gap-x-5`}>
+    <div className={`grid grid-cols-1 md:grid-cols-2 gap-x-5 justify-items-center`}>
       <div className={`text-center md:text-left md:pl-20`}>
         <div className={`text-6xl font-bold mb-10`}>
           NextJS. Antd. Tailwindcss.
@@ -16,11 +16,11 @@ const Header = () => (
         </div>
         <div className={`text-lg`}>Trust me, you&apos;ll thank me later.</div>
       </div>
-      <div className={`text-center`}>
-        <SvgImage src={`hello`} />
+      <div className={`text-center h-auto max-w-full`}>
+        <SvgImage src={`hello`}/>
       </div>
     </div>
   </div>
 );
 
-export default Header;
+export default Banner;

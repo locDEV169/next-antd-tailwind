@@ -1,9 +1,9 @@
 import { Fragment, useEffect, useState } from "react";
 import { NextPage } from "next";
-import SvgImage from "../components/svg";
+import SvgImage from "./components/svg";
 import { Button } from "antd";
 import constant from "../common/constant";
-import Loading from "../components/icon/loader";
+import Loading from "./components/icon/loader";
 
 interface ILoginProps {
   readonly GoogleClientId?: string;
